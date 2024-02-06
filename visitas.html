@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- BOOTSTRAP /////////////////////////// -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- BOOTSTRAP /////////////////////////// -->
+
+    <!-- ESTILOS PROPIOS /////////////////////////// -->
+        <link rel="stylesheet" href="css/style.css">
+    <!-- ESTILOS PROPIOS /////////////////////////// -->
+
+
+    <title>Visitas</title>
+</head>
+<body>
+    
+    <header>
+        <nav class="Nav-bar">   
+            <a href="./index.html"><img class="logo-navbar" src="imagenes/logo-colon-black.png" alt="Logo Teatro Colón"></a>
+       
+           <ul class="NavBar">
+                <li>
+                <a class="funciones" href="./funciones.html">Funciones</a>
+            </li>
+            <li>
+                <a class="visitas" href="./visitas.html">Visitas</a>
+            </li>
+            <li>
+                <a class="noticias" href="./noticias.html">Noticias</a>
+            </li>
+            <li>
+                <a class="e-ticket" href="./e-ticket.html">E-ticket</a>
+            </li>
+            <li class="redes ig">
+                    <a href="https://www.instagram.com/teatrocolon/?hl=es"></a>
+                </li>
+                <li class="redes yt">
+                    <a href="https://www.youtube.com/TEATROCOLONTV"></a>
+                </li>
+        </ul>
+       </nav>
+ 
+    </header> 
+    
+    
+    <section>
+           <img class="imagen-portada-secciones" src="imagenes/Portada-teatro-colon.jpg" alt="Portada Teatro Colón">
+       </section>
+
+    <section class="seccion-teatro">
+        <div class="teatro-historia">
+            <div class="texto-teatro">
+                <h1>El Teatro</h1>
+                <p class="texto-visitas">El <strong>Teatro Colón </strong>es un teatro de ópera de la Ciudad Autónoma de Buenos Aires, la capital de Argentina. Por su tamaño, acústica1​ y trayectoria, ha llegado a ser considerado como uno de los mejores teatros líricos del mundo.​ Según una encuesta realizada por el experto en acústica Leo Beranek a destacados directores internacionales de ópera y de orquesta, el Teatro Colón posee la sala con la mejor acústica para ópera y la segunda mejor para conciertos del mundo.</p>
+            </div>
+        <a class="BotonReservar">Reservar</a>
+        </div>
+
+        <div class="imagen-teatro">
+            <img class="imagen-teatro-jpg" src="imagenes/teatro.jpg" alt="El interior del Colón">
+        </div>
+    </section>
+
+
+
+    <h1 class="text-center">TITULO</h1>
+
+
+    <div class="acordeon-bloque">
+
+    <div class="acordeon_interno">
+        <button class="acordeon">Grupo de más de 20 personas        </button>
+        <div class="panel">
+            <p><strong>Para garantizar un acceso ordenado y ágil, </strong>es necesario que los grupos de más de 20 personas reserven anticipadamente sus entradas, como mínimo, con una semana de antelación.
+            </p>
+        </div>
+
+        <button class="acordeon">Para mayores (3era edad)</button>
+        <div class="panel">
+            <p><strong>Para participar es imprescindible reservar previaviamente. </strong>Para mayor comodidad de los visitantes que lo requieran, disponemos de sillas de ruedas y sillas bastón.
+            </p>
+        </div>
+
+        <button class="acordeon">Visitas escolares</button>
+        <div class="panel">
+            <p><strong>Próximamente se anunciará la fecha de apertura de agenda 2024. </strong> Por consultas: escuelasvisitas@buenosaires.gob.ar
+            </p>
+        </div>
+    </div>
+</div>
+
+
+
+
+    <footer class="footer">
+        <img class="logo-footer" src="imagenes/teatro-colon-large.jpg" alt="Teatro Colón Logo">
+          
+        <div class="seccion-infoteatro">
+            <div class="footer-horario">    
+            <h2>HORARIO</h2>
+                <p>Lunes a viernes de 9 a 17hs</p>
+                <p>Domingos y feriados de 9 a 17hs</p>
+            </div>
+
+            <div class="footer-contacto">
+                <h2>CONTACTO</h2>
+                <p>+54 11 4378-7100</p>
+                <p><a href="">teatrocolon@buenosaires.gob.ar</a></p>
+            </div>
+
+            <div class="footer-teatro">
+                <h2>EL TEATRO</h2>
+                <p>Ubicación: Tucumán 1171, CABA</p>
+            </div>
+        </div>
+    </footer>
+
+<script>
+    let elementosAcordeon = document.getElementsByClassName("acordeon");
+
+    console.log(elementosAcordeon.length);
+
+    for (let i = 0; i< elementosAcordeon.length; i++){
+        elementosAcordeon [i].addEventListener("click", function(){
+            this.classList.toggle("active");
+            let panel = this.nextElementSibling;
+            if (panel.style.display == "block") {
+                panel.style.display = "none"
+            } else {
+                panel.style.display = "block";
+            }
+        });
+    }
+</script>
+
+</body>
+</html>
