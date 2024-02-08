@@ -21,18 +21,17 @@ border-radius: 5px;
 
 
 h1 {
-    padding: 10px;
     font-size: 30px;
     font-weight: 600;
 }
 
 h2 {
-    padding: 5px;
+
     font-size: 20px;
 }
 
 p {
-    padding: 5px;
+
     font-size: 16px;
 }
 
@@ -70,12 +69,15 @@ ul.NavBar li.redes{
     background-size: 100%;
     background-repeat: no-repeat;
     margin-top: 5px;
+    background-position: bottom;
 }
 
 ul.NavBar li.redes.ig {
     background-image: url("../imagenes/Instagram-PNGinstagram-icon-png.png");
     margin-left: 16px;
     padding: 0;
+    position: relative;
+    top: 3px;
 }
 
 ul.NavBar li.redes.yt{
@@ -83,6 +85,8 @@ ul.NavBar li.redes.yt{
     margin-left: 10px;
     margin-right: 10px;
     padding: 0;
+    position: relative;
+    top: 5px;
 }
 
 
@@ -92,7 +96,6 @@ a {
 
 .imagen-portada {
     width: 100%;
-    height: 800px;
     top: 0;
     left: 0;
     margin-top: 0;
@@ -142,7 +145,7 @@ a {
     background-color: goldenrod;
     display: inline-block;
     text-align: center;
-    margin-top: 120px;
+    margin-top: 20px;
     margin-bottom: 10px;
     }
 
@@ -216,18 +219,27 @@ a {
     align-items: center;
 }
 
+.seccion-teatro .teatro-historia .texto-teatro h1 {
+    margin-bottom: 10px;
+}
+
+.seccion-teatro .teatro-historia .texto-teatro p {
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+
+
 .BotonReservar {
     display: inline-block;
     margin-top: 5px;
 }
-/*
-.teatro-historia { grid-area: 1 / 1 / 2 / 2;
-justify-content: left;}
 
-.imagen-teatro {
-    grid-area: 1 / 2 / 2 / 3;
-    justify-content: right;
-}*/
+.text-center {
+    color: goldenrod;
+    margin-top: 60px;
+    font-weight: 700;
+}
 
 .imagen-teatro {
     display: flex;
@@ -345,13 +357,11 @@ justify-content: left;}
 .footer {
     margin-top: 50px;
 }
-/* 
-.footer-horario { grid-area: 1 / 1 / 2 / 2; }
-.footer-contacto { grid-area: 1 / 2 / 2 / 3; }
-.footer-infoteatro { grid-area: 1 / 3 / 2 / 4; }
-*/
 
-
+.footer-horario.p {
+    padding: 0;
+    margin-top: 5px;
+}
 
 .d-flex {
     position: static;
@@ -379,15 +389,30 @@ justify-content: left;}
 }
 
 
-
-
-
-
 .nav-item {
     color: black;
     font-size: 18px;
 }
 
+.nav-item .nav-link.active {
+    color: goldenrod;
+}
+
+.nav-item .nav-link {
+    color: black;
+}
+
+.nav-item .nav-link:hover {
+    color: goldenrod;
+    font-weight: 500;
+}
+
+
+.nav.nav-tabs {
+    color: black;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 
 .grid-funciones {
     display: grid;
@@ -408,37 +433,31 @@ justify-content: left;}
 .grid-imagen1 {
     border-radius: 15px;
     width: 100%;
-    max-width: 250px;
 }
 
 .grid-imagen2 {
     border-radius: 15px;
     width: 100%;
-    max-width: 250px;
 }
 
 .grid-imagen3 {
     border-radius: 15px;
     width: 100%;
-    max-width: 250px;
 }
 
 .grid-imagen4 {
     border-radius: 15px;
     width: 100%;
-    max-width: 250px;
 }
 
 .grid-imagen5 {
     border-radius: 15px;
     width: 100%;
-    max-width: 250px;
 }
 
 .grid-imagen6 {
     border-radius: 15px;
     width: 100%;
-    max-width: 250px;
 }
 
 .visitas-grupo {
@@ -515,26 +534,30 @@ justify-content: left;}
 
 .imagen-div1 {
     border-radius: 15px;
-    width: 300px;
-    height: 200px;
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 10px;
 }
 
 .imagen-div2 {
     border-radius: 15px;
-    width: 300px;
-    height: 200px;
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 10px;
 }
 
 .imagen-div3 {
     border-radius: 15px;
-    width: 300px;
-    height: 200px;
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 10px;
 }
 
 .imagen-div4 {
     border-radius: 15px;
-    width: 300px;
-    height: 200px;
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 10px;
 }
 
 .categoria {
@@ -751,29 +774,7 @@ justify-content: left;}
     margin-top: 0px;
     }
 
-    .grid-imagen1 {
-        max-width: 400px;
-    }
-    
-    .grid-imagen2 {
-        max-width: 400px;
-    }
 
-    .grid-imagen3 {
-        max-width: 400px;
-    }
-    
-    .grid-imagen4 {
-        max-width: 400px;
-    }
-    
-    .grid-imagen5 {
-        max-width: 400px;
-    }
-    
-    .grid-imagen6 {
-        max-width: 400px;
-    }
 
 }
 
