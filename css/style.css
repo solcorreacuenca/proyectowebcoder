@@ -37,15 +37,14 @@ p {
 }
 
 .logo-navbar {
-    height: 80px;
+    height: 50px;
 }
 
-
 .Nav-bar {
-    border: 1px solid red;
     align-items: center;
     display: flex;
     justify-content: space-between;
+    justify-items: center;
 }
 ul.NavBar {
     padding: 0;
@@ -54,15 +53,37 @@ ul.NavBar {
 }
 ul.NavBar li{
     display: inline;
-    padding-left: 20px;
+    padding-left: 10px;
 }
+
 ul.NavBar li a{
-    font-size: 18px;
+    font-size: 15px;
     color: black;
 }
 
 
+ul.NavBar li.redes{
+    display: inline-block;
+    width: 20px;
+    height: 20px !important;
+    padding: 0;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-top: 5px;
+}
 
+ul.NavBar li.redes.ig {
+    background-image: url("../imagenes/Instagram-PNGinstagram-icon-png.png");
+    margin-left: 16px;
+    padding: 0;
+}
+
+ul.NavBar li.redes.yt{
+    background-image: url("../imagenes/youtube-logo-icone-noir.png");
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 0;
+}
 
 
 a {
@@ -87,47 +108,27 @@ a {
     display: block; 
 }
 
-.grid-novedades {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(0, 0.5fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-right: 0px;
-    margin-top: 30px;
-    
-    background-color: blue;
-    justify-content: center;
+.seccion-novedades {
+    margin-top: 20px;
 }
 
-.imagen-novedades1 { grid-area: 1 / 1 / 2 / 2;}
-.novedades-1 { grid-area: 1/ 2 / 2 / 3; }
-.imagen-novedades2 { grid-area: 1 / 3 / 2 / 4; }
-.novedades-2 { grid-area: 1/ 4 / 2 / 5; }
-.imagen-novedades3 { grid-area: 1 / 5 / 2 / 6; }
-.novedades-3 { grid-area: 1/ 6 / 2 / 7; }
-
-.fecha {
-    padding-top: 0px;
-    padding-bottom: 5px;
+.seccion-novedades p {
     font-size: 16px;
+    font-weight: 200;
+    padding-bottom: 0;
+    padding-top: 20px;
 }
 
-.titulo { 
+.seccion-novedades h2 {
+    font-size: 22px;
+    font-weight:700;
     color: goldenrod;
-    padding: 5px;
-    font-size: 26px;
-    margin: 0px;
-    font-weight: bold;
+    padding-top: 0;
 }
 
-.detalle {
-    padding-bottom: 0px;
-    padding-top: 5px;
-    font-size: 20px;
-    font-weight: lighter;
+.seccion-novedades h3 {
+    font-size: 18px;
+    font-weight: 400;
 }
 
 .BotonVerMas {
@@ -139,12 +140,9 @@ a {
     border: none;
     border-radius: 8px;
     background-color: goldenrod;
-    margin-top: 5px;
     display: inline-block;
-    justify-content: center;
-    align-items: center;
     text-align: center;
-    margin-top: 0px;
+    margin-top: 120px;
     margin-bottom: 10px;
     }
 
@@ -154,10 +152,11 @@ a {
     border: 2px solid goldenrod;
 }
 
-.contedor_bt{
+.contedor_bt {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 0;
 }
 
 
@@ -352,14 +351,16 @@ justify-content: left;}
 .footer-infoteatro { grid-area: 1 / 3 / 2 / 4; }
 */
 
-.Filtros {
+
+
+.d-flex {
     position: static;
+    display: flex;
     left: 0;
     right: 0;
     height: 60px;
-    
-    margin-top: 50px;
-    margin-bottom: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     align-items: center;
 }
 
@@ -375,44 +376,26 @@ justify-content: left;}
     border-radius: 8px;
     height: 15px;
     border-color: goldenrod;
-    align-items: right;
 }
 
 
 
-.tabs {
+
+
+
+.nav-item {
+    color: black;
     font-size: 18px;
-    align-items: left;
-    margin-right: 850px;
-    color: black;
-    }
-
-.tabs :hover {
-    font-weight: bold
 }
 
-
-.TabActuales {
-    margin-right: 50px;
-    color: black;
-}
-
-.TabActuales :hover {
-    color: goldenrod;
-}
-
-.TabFuturas :hover {
-    color: goldenrod;
-}
 
 .grid-funciones {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 2px;
-    grid-row-gap: 2px;
-    
-    margin-top: 0px;    
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 3px;
+    grid-row-gap: 0;
+    margin-top: 0;
 }
 
 .grid-funciones img{
@@ -423,45 +406,39 @@ justify-content: left;}
 }
 
 .grid-imagen1 {
-    grid-area: 1 / 1 / 2 / 2;
     border-radius: 15px;
-    width: 400px;
-    height: 400px;
+    width: 100%;
+    max-width: 250px;
 }
 
 .grid-imagen2 {
-    grid-area: 1 / 2 / 2 / 3;
     border-radius: 15px;
-    width: 400px;
-    height: 400px;
+    width: 100%;
+    max-width: 250px;
 }
 
 .grid-imagen3 {
-    grid-area: 1 / 3 / 2 / 4;
     border-radius: 15px;
-    width: 400px;
-    height: 400px;
+    width: 100%;
+    max-width: 250px;
 }
 
 .grid-imagen4 {
-    grid-area: 2 / 1 / 3 / 2;
     border-radius: 15px;
-    width: 400px;
-    height: 400px;
+    width: 100%;
+    max-width: 250px;
 }
 
 .grid-imagen5 {
-    grid-area: 2 / 2 / 3 / 3;
     border-radius: 15px;
-    width: 400px;
-    height: 400px;
+    width: 100%;
+    max-width: 250px;
 }
 
 .grid-imagen6 {
-    grid-area: 2 / 3 / 3 / 4;
     border-radius: 15px;
-    width: 400px;
-    height: 400px;
+    width: 100%;
+    max-width: 250px;
 }
 
 .visitas-grupo {
@@ -573,27 +550,6 @@ justify-content: left;}
     font-size: 20px;
     margin-top: 5px;
     font-weight: bold;
-}
-
-
-
-ul.NavBar li.redes{
-    display: inline-block;
-    width: 20px;
-    height: 20px !important;
-    padding-left: 0;
-    background-size: 100%;
-    background-repeat: no-repeat;
-}
-
-ul.NavBar li.redes.ig {
-    background-image: url("../imagenes/Instagram-PNGinstagram-icon-png.png");
-    margin-left: 20px;
-}
-
-ul.NavBar li.redes.yt{
-    background-image: url("../imagenes/youtube-logo-icone-noir.png");
-    margin-left: 10px;
 }
 
 
@@ -716,11 +672,111 @@ ul.NavBar li.redes.yt{
         grid-row-gap: 0px;
     }
 
+    .imagen1 {
+        width: 100%;
+        max-width: 180px;
+    }
+
+    .imagen2 {
+        width: 100%;
+        max-width: 180px;
+    }
+
+    .imagen3 {
+        width: 100%;
+        max-width: 180px;
+    }
+
+    .imagen4 {
+        width: 100%;
+        max-width: 180px;
+    }
+
+    .imagen5 {
+        width: 100%;
+        max-width: 180px;
+    }
+
+    .imagen6 {
+        width: 100%;
+        max-width: 180px;
+    }
+
+    .imagen7 {
+        width: 100%;
+        max-width: 180px;
+    }
+
+    .imagen8 {
+        width: 100%;
+        max-width: 180px;
+    }
+
     .seccion-infoteatro {
         grid-template-columns: repeat(3, 1fr);
     }
+
+    .logo-navbar {
+        height: 80px;
+    }
     
+    ul.NavBar li{
+        padding-left: 20px;
+    }
+
+    ul.NavBar li a{
+        font-size: 18px;
+    }
+    
+    
+    ul.NavBar li.redes{
+        width: 22px;
+        height: 22px !important;
+    }
+    
+    ul.NavBar li.redes.ig {
+        margin-left: 20px;
+    }
+    
+    ul.NavBar li.redes.yt{
+        margin-right: 20px;
+    }
+    
+
+    .grid-funciones {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 1px;
+    grid-row-gap: 2px;
+    margin-top: 0px;
+    }
+
+    .grid-imagen1 {
+        max-width: 400px;
+    }
+    
+    .grid-imagen2 {
+        max-width: 400px;
+    }
+
+    .grid-imagen3 {
+        max-width: 400px;
+    }
+    
+    .grid-imagen4 {
+        max-width: 400px;
+    }
+    
+    .grid-imagen5 {
+        max-width: 400px;
+    }
+    
+    .grid-imagen6 {
+        max-width: 400px;
+    }
+
 }
+
 
 /*Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) { 
@@ -731,7 +787,6 @@ ul.NavBar li.redes.yt{
 @media (min-width: 1200px) {
     .grid-novedades {
         grid-template-columns: repeat(6, 1fr);
-        background-color: pink;
     }
     
     
