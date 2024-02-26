@@ -311,6 +311,7 @@ a {
 .imagen-teatro {
     display: flex;
     justify-content: right;
+    overflow: hidden;
 }
 
 .imagen-teatro-jpg {
@@ -318,10 +319,12 @@ a {
     max-width: 600px;
     margin-left: 0px;
     border-radius: 20px;
+    transition: 0.5s;
+    object-fit: cover;
 }
 
-.imagen-teatro-jpg .scale-up-center {
-    animation: scale-up-center 0.4s cubic-bezier(0.390, 0575, 0.565, 1.000);
+.imagen-teatro-jpg:hover {
+    transform: scale(1.2);
 }
 
 .seccion-teatro {
@@ -492,13 +495,17 @@ a {
     grid-column-gap: 3px;
     grid-row-gap: 0;
     margin-top: 0;
+    overflow: hidden;
 }
 
 .grid-funciones img{
     object-fit: cover;
+    transition: 0.5s;
+    object-fit: cover;
 }
 .grid-funciones img:hover{
     filter: grayscale(100%);
+    transform: scale(1.2);
 }
 
 .grid-imagen1 {
