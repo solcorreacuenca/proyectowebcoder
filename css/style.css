@@ -23,6 +23,32 @@ border-radius: 5px;
 h1 {
     font-size: 30px;
     font-weight: 600;
+    color: transparent;
+}
+
+h1:before {
+    content:attr(data-text);
+    color: #000;
+    overflow: hidden;
+    border-right: 1px solid #000;
+    animation: type 10s steps(8) infinite;
+    white-space: nowrap;
+}
+@keyframes type
+{
+    0%
+    {
+        width: 0;
+    }
+    50%
+    {
+        width: 100%;
+    }
+    100%
+    {
+        width: 0;
+    }
+
 }
 
 h2 {
@@ -292,6 +318,10 @@ a {
     max-width: 600px;
     margin-left: 0px;
     border-radius: 20px;
+}
+
+.imagen-teatro-jpg .scale-up-center {
+    animation: scale-up-center 0.4s cubic-bezier(0.390, 0575, 0.565, 1.000);
 }
 
 .seccion-teatro {
