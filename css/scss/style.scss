@@ -1,3 +1,565 @@
-h1 {
-    
+.botones {
+    width: 100px;
+    height: 100px;
+    background-color: goldenrod;
+    color: white;
+    border-radius: 5px;
 }
+h1 {
+    font-size: 30px;
+    font-weight: 600;
+}
+h2 {
+    font-size: 20px;
+}
+p {
+    font-size: 16px;
+}
+.logo-navbar {
+    height: 50px;
+    height: 80px;
+}
+.Nav-bar {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+}
+ul {
+    &.NavBar {
+                   padding: 0;
+                   margin: 0;
+                   li {
+                                   display: inline;
+                                   padding-left: 10px;
+                                   padding-left: 20px;
+                                   a {
+                                                   font-size: 15px;
+                                                   color: black;
+                                                   font-size: 18px;
+                                   }
+                                   &.redes {
+                                                   display: inline-block;
+                                                   width: 20px;
+                                                   height: 20px !important;
+                                                   padding: 0;
+                                                   background-size: 100%;
+                                                   background-repeat: no-repeat;
+                                                   margin-top: 5px;
+                                                   background-position: bottom;
+                                                   width: 22px;
+                                                   height: 22px !important;
+                                                   &.ig {
+                                                                   background-image: url("../imagenes/Instagram-PNGinstagram-icon-png.png");
+                                                                   margin-left: 16px;
+                                                                   padding: 0;
+                                                                   position: relative;
+                                                                   top: 3px;
+                                                                   margin-left: 20px;
+                                                   }
+                                                   &.yt {
+                                                                   background-image: url("../imagenes/youtube-logo-icone-noir.png");
+                                                                   margin-left: 10px;
+                                                                   margin-right: 10px;
+                                                                   padding: 0;
+                                                                   position: relative;
+                                                                   top: 5px;
+                                                                   margin-right: 20px;
+                                                   }
+                                   }
+                   }
+    }
+}
+.funciones {
+    &:hover {
+                   font-weight: 600;
+                   color: goldenrod;
+    }
+}
+.visitas {
+    &:hover {
+                   font-weight: 600;
+                   color: goldenrod;
+    }
+}
+.noticias {
+    &:hover {
+                   font-weight: 600;
+                   color: goldenrod;
+    }
+}
+a {
+    text-decoration: none;
+}
+.imagen-portada {
+    width: 100%;
+    top: 0;
+    left: 0;
+    margin-top: 0;
+    display: block;
+}
+.imagen-portada-secciones {
+    width: 100%;
+    height: 400px;
+    top: 0;
+    left: 0;
+    margin-top: 0;
+    display: block;
+}
+.seccion-novedades {
+    margin-top: 20px;
+    p {
+                   font-size: 16px;
+                   font-weight: 200;
+                   padding-bottom: 0;
+                   padding-top: 20px;
+    }
+    h2 {
+                   font-size: 22px;
+                   font-weight: 700;
+                   color: goldenrod;
+                   padding-top: 0;
+    }
+    h3 {
+                   font-size: 18px;
+                   font-weight: 400;
+    }
+}
+.texto {
+    margin-left: 10px;
+}
+.BotonVerMas {
+    font-weight: 600;
+    padding: 10px 15px;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    background-color: goldenrod;
+    display: inline-block;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 10px;
+    &:hover {
+                   color: goldenrod;
+                   background-color: white;
+                   border: 2px solid goldenrod;
+    }
+}
+.noticias-bloque {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 5px;
+    grid-row-gap: 0px;
+    padding-top: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    .BotonVerMas {
+                   font-weight: 600;
+                   padding: 5px 15px;
+                   font-size: 18px;
+                   color: white;
+                   cursor: pointer;
+                   border: none;
+                   border-radius: 10px;
+                   background-color: goldenrod;
+                   display: inline-block;
+                   text-align: center;
+                   margin-top: 10px;
+                   margin-bottom: 10px;
+                   &:hover {
+                                   color: goldenrod;
+                                   background-color: white;
+                                   border: 2px solid goldenrod;
+                   }
+    }
+}
+.contedor_bt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+}
+.BotonReservar {
+    padding: 10px 15px;
+    font-size: 18px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: goldenrod;
+    margin-top: 20px;
+    display: inline-block;
+    margin-top: 5px;
+    &:hover {
+                   color: goldenrod;
+                   background-color: white;
+                   border: 2px solid goldenrod;
+    }
+}
+.imagen-novedades1 {
+    border-radius: 15px;
+    width: 150px;
+    height: 150px;
+    padding-right: 5px;
+    padding-left: 10px;
+    width: 100%;
+    max-width: 200px;
+}
+.imagen-novedades2 {
+    border-radius: 15px;
+    width: 150px;
+    height: 150px;
+    padding-right: 5px;
+    padding-left: 10px;
+}
+.imagen-novedades3 {
+    border-radius: 15px;
+    width: 150px;
+    height: 150px;
+    padding-right: 5px;
+    padding-left: 10px;
+}
+.seccion-teatro {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin-top: 50px;
+    align-items: center;
+    margin-top: 70px;
+    grid-template-columns: repeat(2, 1fr);
+    .teatro-historia {
+                   .texto-teatro {
+                                   h1 {
+                                                   margin-bottom: 10px;
+                                   }
+                                   p {
+                                                   margin-top: 5px;
+                                                   margin-bottom: 20px;
+                                   }
+                   }
+    }
+}
+.text-center {
+    color: goldenrod;
+    margin-top: 60px;
+    font-weight: 700;
+}
+.imagen-teatro {
+    display: flex;
+    justify-content: right;
+}
+.imagen-teatro-jpg {
+    width: 100%;
+    max-width: 600px;
+    margin-left: 0px;
+    border-radius: 20px;
+}
+.carrousel-imagenes {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 0,5fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 10px;
+    border-radius: 15px;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: 0.5 fr;
+    grid-column-gap: 5px;
+    grid-row-gap: 0px;
+}
+.imagen1 {
+    grid-area: 1 / 1 / 2 / 2;
+    border-radius: 15px;
+    width: 150px;
+    height: 150px;
+    padding-right: 5px;
+    padding-left: 10px;
+    width: 100%;
+    max-width: 180px;
+}
+.imagen2 {
+    grid-area: 1 / 2 / 2 / 3;
+    border-radius: 15px;
+    width: 150px;
+    height: 150px;
+    padding-right: 5px;
+    padding-left: 10px;
+    width: 100%;
+    max-width: 180px;
+}
+.imagen3 {
+    grid-area: 1 / 3 / 2 / 4;
+    border-radius: 15px;
+    width: 150px;
+    height: 150px;
+    padding-right: 5px;
+    padding-left: 10px;
+    width: 100%;
+    max-width: 180px;
+}
+.imagen4 {
+    grid-area: 1 / 4 / 2 / 5;
+    border-radius: 15px;
+    width: 150px;
+    height: 150px;
+    padding-right: 5px;
+    padding-left: 10px;
+    width: 100%;
+    max-width: 180px;
+}
+.imagen5 {
+    grid-area: 1 / 5 / 2 / 6;
+    border-radius: 15px;
+    width: 150px;
+    height: 150px;
+    padding-right: 5px;
+    padding-left: 10px;
+    width: 100%;
+    max-width: 180px;
+}
+.imagen6 {
+    grid-area: 1 / 6 / 2 / 7;
+    border-radius: 15px;
+    width: 150px;
+    height: 150px;
+    padding-right: 5px;
+    padding-left: 10px;
+    width: 100%;
+    max-width: 180px;
+}
+.imagen7 {
+    grid-area: 1 / 7 / 2 / 8;
+    border-radius: 15px;
+    width: 150px;
+    height: 150px;
+    padding-right: 5px;
+    padding-left: 10px;
+    width: 100%;
+    max-width: 180px;
+}
+.imagen8 {
+    grid-area: 1 / 8 / 2 / 9;
+    border-radius: 15px;
+    width: 150px;
+    height: 150px;
+    padding-right: 5px;
+    padding-left: 10px;
+    width: 100%;
+    max-width: 180px;
+}
+.logo-footer {
+    height: 80px;
+}
+.seccion-infoteatro {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 0,5fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    grid-template-columns: repeat(3, 1fr);
+}
+.footer {
+    margin-top: 50px;
+}
+.footer-horario {
+    &.p {
+                   padding: 0;
+                   margin-top: 5px;
+    }
+}
+.d-flex {
+    position: static;
+    display: flex;
+    left: 0;
+    right: 0;
+    height: 60px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+.Filtros {
+    * {
+                   display: inline;
+                   color: black;
+                   height: 80px;
+    }
+}
+.Dropdown-Filtro-Menu {
+    font-size: 16px;
+    padding: 18px 6px;
+    border-radius: 8px;
+    height: 15px;
+    border-color: goldenrod;
+}
+.nav-item {
+    color: black;
+    font-size: 18px;
+    .nav-link {
+                   color: black;
+                   &.active {
+                                   color: goldenrod;
+                   }
+                   &:hover {
+                                   color: goldenrod;
+                                   font-weight: 500;
+                   }
+    }
+}
+.nav {
+    &.nav-tabs {
+                   color: black;
+                   margin-top: 20px;
+                   margin-bottom: 20px;
+    }
+}
+.grid-funciones {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 3px;
+    grid-row-gap: 0;
+    margin-top: 0;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 1px;
+    grid-row-gap: 2px;
+    margin-top: 0px;
+    img {
+                   object-fit: cover;
+                   &:hover {
+                                   filter: grayscale(100%);
+                   }
+    }
+}
+.grid-imagen1 {
+    border-radius: 15px;
+    width: 100%;
+}
+.grid-imagen2 {
+    border-radius: 15px;
+    width: 100%;
+}
+.grid-imagen3 {
+    border-radius: 15px;
+    width: 100%;
+}
+.grid-imagen4 {
+    border-radius: 15px;
+    width: 100%;
+}
+.grid-imagen5 {
+    border-radius: 15px;
+    width: 100%;
+}
+.grid-imagen6 {
+    border-radius: 15px;
+    width: 100%;
+}
+.visitas-grupo {
+    font-size: 18px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.acordeon-bloque {
+    display: flex;
+    justify-content: center;
+}
+.acordeon_interno {
+    width: 100%;
+    max-width: 600px;
+    display: block;
+}
+.acordeon {
+    font-size: 22px;
+    font-weight: bolder;
+    color: black;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    border-color: goldenrod;
+    padding: 8px;
+    text-align: left;
+    width: 100%;
+    margin-top: 10px;
+}
+.active, .acordeon:hover {
+    color: goldenrod;
+}
+.panel {
+    font-size: 16px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+    text-align: left;
+}
+.imagen-div1 {
+    border-radius: 15px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.imagen-div2 {
+    border-radius: 15px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.imagen-div3 {
+    border-radius: 15px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.imagen-div4 {
+    border-radius: 15px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.categoria {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.titulo-noticia {
+    color: goldenrod;
+    padding-top: 8px;
+    font-size: 18px;
+    margin-top: 5px;
+    font-weight: bold;
+    font-size: 20px;
+}
+@media {
+    (min-width 
+                   &: 
+                                   576px) {
+                                   }
+                                   768px {
+                                                   .grid-novedades {
+display: grid;
+                                                   grid-template-columns: repeat(2, 1fr);
+                                   }
+                                   1200px {
+                                                   .grid-novedades {
+grid-template-columns: repeat(6, 1fr);
+                                   }
+                   }
+    }
+}
+
+{
+    @media {
+                   (min-width 
+                                   &: 
+                                                   992px) {
+                                                   }
+                                                   1400px {
+                                                   }
+                                   }
+}
+    
+
